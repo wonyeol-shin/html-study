@@ -1,0 +1,19 @@
+.test-input {
+  padding: 10px;
+  font-size: 20px;
+}
+
+/*
+아래처럼 단일 태그에 디자인을 넣거나
+input {
+  padding: 15px;
+}
+
+inout[속성명=속성값]
+으로 원하는 input에만 스타일 적용이 가능하다.
+
+input[type="text"] {
+  padding: 20px;
+}
+
+*/

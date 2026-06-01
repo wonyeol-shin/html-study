@@ -1,0 +1,63 @@
+.container {
+  width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-content {
+  width: 80%;
+  height: 200px;
+
+  float: left;
+}
+
+.blog-profile {
+  width: 50px;
+  float: left;
+}
+
+.blog-img {
+  width: 20%;
+  height: 200px;
+
+  float: left;
+}
+
+.blog-name {
+  float: left;
+}
+
+/* 부모태그에서 자식 태그에에 한번에 클래스를 부여하고 싶을 때
+클래스명[띄어쓰기][태그]
+형식을 주게 되면 해당 클래스를 사용하는 혹은 해당 클래스 하위의 모든 태그들이 클래스에 적용된다.
+
+클래스명>[태그]
+형식도 있는데 해당 클래스 하위 첫 태그들만 클래스사 적용된다.
+
+*/
+.navBar li {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navBar li:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.navBar a:hover {
+  color: blue;
+}
+
+.navBar a {
+  font-size: 18px;
+  /* 모든 링크등은 _ 가 붙게 되는데 _ 를 제거하는 옵션 */
+  text-decoration: none;
+  /* 색깔을 검정색으로 주어 방문 시 보라색으로 되는 거 방지*/
+  color: black;
+}

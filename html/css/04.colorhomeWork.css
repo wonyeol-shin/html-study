@@ -1,0 +1,66 @@
+.container {
+  width: 1000px;
+}
+
+.left {
+  width: 60%;
+  float: left;
+}
+
+.left-top {
+  height: 100px;
+}
+
+.profile {
+  width: 30px;
+  float: left;
+}
+
+.text-box {
+  float: left;
+  margin-left: 10px;
+}
+
+.name {
+  margin: 0;
+}
+
+.time {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.left-bottom {
+  height: 300px;
+}
+
+.right-image {
+  width: 40%;
+  height: 400px;
+  float: right;
+  text-align: center;
+  line-height: 300px;
+}
+
+/*
+display block은 한줄을 다 차지하는 특성으로
+정렬 시 자신의 공백을 기준으로 정렬한다 ( margin)
+
+displayinline은 text baseline인 __ 을 기준으로 정렬되어
+부모태그의 속성을 통해 정렬이 된다.
+baseline에서 정령이 되다보니 top, bottom 과 같은 속성이 거의 안 먹는다
+
+*/
+
+/*
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+*/
+
+.image {
+  width: 80%;
+  vertical-align: middle;
+}

@@ -1,0 +1,9 @@
+table {
+  /* 테이블들이 기본적으로 간격이 벌어져 있는데 이걸로 줄임*/
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid black;
+}

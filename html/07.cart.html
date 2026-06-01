@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/07.cart.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p style="font-size: 50px">
+        greettings
+        <!--참고로 vertical-aligin는 예시처림 ininle, inline-block요소 간
+          세로 정렬을 하기 위해 사용 top / bottom / middle 존재 
+          예시 상황은 'greetings' 이 커서 '안녕' 글자가 아래로 내려와 있는데 이걸 중앙으로 정렬시킴
+          -->
+        <span style="font-size: 20px; vertical-align: middle">안녕</span>
+      </p>
+    </div>
+
+    <div>
+      <img
+        src="./apple.jpg"
+        width="32"
+        height="32"
+        style="vertical-align: middle"
+      />
+      <span> image with a default alignment. </span>
+    </div>
+
+    <div>
+      <!-- 테이블을 생성할 때 사용, 행 먼저 만들고 열을 만들면 된다. -->
+      <table>
+        <!-- 기능은 없지만 열 제목 항목이라고 표시하고자 사용 -->
+        <thead>
+          <!-- 행을 생성할 땐 tr태그 사용 / table row-->
+          <tr>
+            <!-- 제목용 열을 만들 때 th사용 / table head -->
+            <th>
+              <p>00000</p>
+              <p>00000</p>
+            </th>
+            <!-- 열을 만들 때 td사용 / table data-->
+            <th style="vertical-align: top">1</th>
+            <th>2</th>
+          </tr>
+        </thead>
+        <!-- 기능은 없지만 일반 행 이라고 표시할 때 사용 -->
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

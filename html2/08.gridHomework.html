@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- 중간사이즈 이하에서는 모바일, 이상은 2*2,  pc는 4줄 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="./photo1.jpg"
+              style="width: 100%; height: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4>Card Tile</h4>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="./photo1.jpg"
+              style="width: 100%; height: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4>Card Tile</h4>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="./photo1.jpg"
+              style="width: 100%; height: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4>Card Tile</h4>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="./photo1.jpg"
+              style="width: 100%; height: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4>Card Tile</h4>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+<!-- 
+        order-md-0 : 첫번째 배치 ,
+        order-md-1 : 2번째 배치
+
+        col-2와 col을 줘서 모바일 사이즈에서는 모든 항목이 이미지 글로 통일
+        md사이즈 부터는  order와 md를 적절히 주어 배치
+-->
+      <div class="row align-items-center ">
+        <div class="col-2 col-md-2 order-md-1 ">
+          <img src="./author.png" alt="" class="rounded-circle" />
+        </div>
+        <div class="col col-md-5 order-md-0 ">
+          <p>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-2 col-md-2 order-md-1">
+          <img src="./author2.png" alt="" class="rounded-circle" />
+        </div>
+        <div class="col-10 col-md-5 order-md-2">
+          <p>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-2 col-md-2 order-md-1"">
+          <img src="./author3.png" alt="" class="rounded-circle" />
+        </div>
+        <div class="col-10 col-md-5 order-md-0">
+          <p>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

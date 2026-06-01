@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/08.ocss,bem.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 빨간버튼,파란버튼 2개를 만든다고 했을 때 
+     일일히 클래스를 만드는것은 비효율적이다.
+     재사용을 할 수 있게 만드는것이 바람직하다. 
+     oocss 기법이라고 한다.
+     -->
+    <button class="main-btn bg-red">빨간버튼</button>
+    <button class="main-btn bg-blue">파란버튼</button>
+    <!-- class 이름 생성 시 block__element--modifier bem 기법을 따르면 좋다.
+     일단 목적에 따라 큰 덩어리 이름을 붙인다.
+     다음으로 덩어리 안 어떤 역할을 하는지 역할 이름을 붙인다.
+     마지막으로 구분이 필요할 경우 세부특징 을 추가한다.
+     class="덩어리이름__역할--세부특징"
+
+     아래 프로필을 담당하는 하나의 덩어리니 profile이라고 붙인다.
+     다음으로 각 태그의 역할을 붙인다. img,title, content
+     마지막으로 세부 구분을 위한 특징을 추가한ㄷ, blue, red
+
+    -->
+    <div class="profile">
+      <img class="profile__img" src="" alt="" />
+      <h4 class="profile__title"></h4>
+      <p class="profile__content"></p>
+      <button class="profile__button--red"></button>
+      <button class="profile__button--blue"></button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+div {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+html {
+  line-height: 1.15;
+}
+
+.cart-background {
+  width: 100%;
+  background-color: #c2d3de;
+  padding: 30px;
+}
+
+.cart-table {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+}
+
+/*
+.td,
+th {
+  border: 1px solid black;
+}
+*/
+
+.cart-table td,
+.cart-table th {
+  padding: 15px;
+  border-bottom: 1px solid #c2d3de;
+}
+
+/* table에서 특정 열에 크기를 주었을 때
+최대로 줄 수 있는 한계가 존재한다.
+다른 셀들도 최소한의 크기를 갖기 때문
+
+또 하나의 열에 적용하면 그 아래 다른 열도 적용된다.
+*/
+.cell-long {
+  width: 300px;
+}
+
+/*
+참고로 위 cell-long 처럼 특정 th에 클래스를 주어
+스타일을 적용 시킬 수도 있지만
+
+nth-child(N) 을 통해 N번 째 셀에 클래스를 부여할 수 있다.
+.cart-table th:nth-child(2){
+
+}
+*/
+
+.btn {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: coral;
+  /* 안에 글자 하얀색으로 */
+  color: white;
+
+  /* 커서 변경 */
+  cursor: pointer;
+}
+
+/*pseudo-class */
+/*마우스를 가져다 댔을 때*/
+.btn:hover {
+  background-color: chocolate;
+}
+/*누르고 나서 다른 걸 클릭하기 전까지 유지*/
+.btn:focus {
+  background-color: gray;
+}
+/*눌렀을 때*/
+.btn:active {
+  background-color: brown;
+  border: 2px solid black;
+}
+
+/* hover -> focus -> active 순으로 작성해야지 겹치는 증상 없이 동작됨*/
+
+.input-test {
+  font-size: 15px;
+}
+
+.input-test:focus {
+  border-bottom-color: #c2d3de;
+}
+
+.custom-link {
+  /* 링크 밑줄 제거 */
+  text-decoration: none;
+}
+
+.custom-link:link {
+  color: violet;
+}
+.custom-link:visited {
+  color: black;
+}

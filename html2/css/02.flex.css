@@ -1,0 +1,74 @@
+div,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.flex-container {
+  /* inline-block + table 속성을 가짐*/
+  display: flex;
+  /*  felx에서 사용 가능한 속성 */
+  /* 가로준 어떻게 위치 시킬지 */
+  justify-content: center;
+  /* 상하 정렬 */
+  align-items: center;
+  /* 기본값은 row로 가로배치 column 세로배치 */
+  flex-direction: row;
+  /* 요소가 커도 최대 크기제한이 있어 더 커지지 않는데 
+  wrap을 사용하면 다음줄로 넘어가서 배치가 됨*/
+  /*flex-wrap: wrap;*/
+}
+
+.flex-item {
+  /* 테이블 열과 마찬가지로 다른 요소로 인해 최대 크기 제한이 있음 */
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  margin: 5px;
+}
+/* 각 요서의 width가 100%가 아닐 때 각 요소들의 크기 비율을 지정할 수 있다
+ex) a는 타 요서보다 2배 크게 등
+*/
+.flex-test1 {
+  flex-grow: 1;
+}
+
+.flex-test2 {
+  flex-grow: 2;
+}
+
+.logo-container {
+  background-color: tomato;
+  display: flex;
+  align-items: center;
+}
+
+.logo-box {
+  width: 100px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.logo-container_surplus {
+  flex-grow: 2;
+}
+
+.logo-container-left {
+  font-size: 30px;
+}
+
+.nav-container {
+  display: flex;
+  background-color: aqua;
+  height: 50px;
+  padding: 5px;
+}
+
+.nav-item {
+  margin-right: 5px;
+}

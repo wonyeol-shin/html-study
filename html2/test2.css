@@ -1,0 +1,95 @@
+body {
+  margin: 0px;
+}
+
+div,
+p,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: black;
+  padding: 30px;
+}
+
+.container-form {
+  background-color: white;
+  width: 1000px;
+  height: 600px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w100 {
+  width: 800px;
+
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w100 input,
+.w100 textarea {
+  width: 100%;
+  padding: 20px;
+}
+
+.w50 {
+  display: flex;
+  width: 800px;
+  padding: 10px;
+  /*  flex간의 간격 */
+  gap: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w50-1 {
+  /* 딱 절반만큼 크기를 가져가게 설정 */
+  flex: 1;
+}
+
+.w50-1 input {
+  width: 100%;
+  padding: 20px;
+}
+
+.b100 {
+  display: flex;
+  /* 서로 벌어지는 상태인듯*/
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .container-form {
+    height: 800px;
+  }
+
+  .w50 {
+    flex-wrap: wrap;
+  }
+
+  .w50-1 {
+    /* 남는 공간 있으면 늘어나도 됨 */
+    flex-grow: 1;
+    /* 공간 부족하면 줄어들어도 됨 */
+    flex-shrink: 1;
+    /* 기본 크기를 100%로 잡는다”*/
+    flex-basis: 100%;
+  }
+
+  .b100 {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,219 @@
+/*  핸드폰 이미지가 있는 영역*/
+.phone-container {
+  display: flex;
+  /* 배경 그라데이션 */
+  background: linear-gradient(blue, purple);
+  justify-content: space-around;
+}
+
+/*  핸드폰 이미지 영역의 열들*/
+.phone-contents {
+  width: 50%;
+} /*  핸드폰 이미지 영역의 글, 버튼*/
+.phone-contents h2,
+.phone-contents p,
+.phone-contents button {
+  color: white;
+  margin: 10px;
+} /*  핸드폰 이미지 영역의 이미지*/
+.phone-contents img {
+  display: block;
+  /* width: 100%; */
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 300px;
+  min-height: 300px;
+  align-self: flex-end;
+} /*  핸드폰 영역의 텍스트들만 조금 안쪽으로 들어오게 조정 */
+.phone-txt {
+  padding: 30px;
+}
+.phone-txt h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+/* 모든 버튼에 해당  */
+.button {
+  background-color: black;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+/* 2번재 컨텐츠 영역*/
+.content-container {
+  padding: 50px;
+  text-align: center;
+}
+.content-container * {
+  margin-top: 10px;
+}
+.content-container h1 {
+  font-size: 20px;
+  /* 폰트 진하게 */
+  font-weight: bold;
+}
+
+/* 3번째 아이콘 영역 */
+.icon-container {
+  background-color: #4374d9;
+  padding: 30px;
+}
+/* 아이콘 상단 텍스트*/
+.icon-txt {
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+/* 아이콘 */
+.icon-box {
+  display: flex;
+  /* flex  요소들이 중앙으로 오게 설정 */
+  justify-content: center;
+}
+.icon-content {
+  text-align: center;
+  /* 아이콘과 글들이 서로 간격이 떨어지게 조정 */
+  margin: 0 15px;
+}
+.icon-content i {
+  background-color: white;
+  padding: 20px;
+  /* 아이콘 배경을 동그랗게 설정*/
+  border-radius: 50%;
+  color: #4374d9;
+  font-size: 30px;
+}
+.icon-content p,
+.icon-content h4 {
+  color: white;
+  /* 글들의 위 아래 간격을 조정 */
+  margin-top: 10px;
+}
+
+/* 4번째 이미지 영역 */
+.img-container {
+  text-align: center;
+  padding: 50px;
+}
+.img-txt {
+  margin-bottom: 20px;
+}
+.img-txt h1 {
+  font-weight: bold;
+  font-size: 20px;
+} /* 2*2 이미지 영역 */
+.img-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-content {
+  width: 50%;
+  height: 400px;
+  /* [필수 세트 속성] 이미지가 상자 크기에 맞춰 찌그러지지 않고 꽉 차게 만듭니다 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* ⭐ 패딩을 주면 2x2가 깨지는 현상을 완벽하게 막아줍니다 */
+  box-sizing: border-box;
+  padding: 50px;
+  text-align: left;
+  /* 이미지에 마우스 올리면 흰색 태두리 발생 */
+  transition: 0.5s;
+  box-shadow: inset 0 0 0 0px transparent;
+  /*           ①     ②     ③     ④       ⑤      ⑥   
+  ① inset (그림자 방향):그림자를 박스 바깥이 아니라 박스 안쪽(내부)으로 드리우게 만드는 키워드 이 값이 없으면 일반적인 바깥 그림자 
+  ② 0 (X축 이동 거리 / 가로 번짐):그림자를 가로(오른쪽/왼쪽)로 얼마나 이동시킬지 결정. 0이므로  정중앙에 위치
+  ③ 0 (Y축 이동 거리 / 세로 번짐):그림자를 세로(위/아래)로 얼마나 이동시킬지 결정. 0이므로 위아래로 치우치지 않음
+  ④ 0 (흐림 정도 / Blur):그림자의 경계선을 얼마나 부드럽고 은은하게 퍼지게(흐리게) 만들지 정함. 숫자가 클수록 안개처럼 퍼짐. 현재 0이므로 퍼짐 없이 칼로 자른 듯 선명한 선이 됨.
+  ⑤ 20px (그림자 확장 범위 / Spread):그림자의 두께(크기)를 결정. 사방에서 안쪽으로 20px만큼 두껍게 그림자를 채움. 
+  ⑥ white (색상):그림자의 색상.
+  
+  */
+}
+.img-content * {
+  color: white;
+}
+.img-content h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.img-1 {
+  background-image: url(../portfolioIMG/portfolio-1-1.jpg);
+}
+.img-2 {
+  background-image: url(../portfolioIMG/portfolio-2.jpg);
+}
+.img-3 {
+  background-image: url(../portfolioIMG/portfolio-3-1.jpg);
+}
+.img-4 {
+  background-image: url(../portfolioIMG/portfolio-4-1.jpg);
+}
+.img-1:hover {
+  box-shadow: inset 0 0 0 40px white;
+}
+.img-2:hover {
+  box-shadow: inset 0 0 0 40px white;
+}
+.img-3:hover {
+  box-shadow: inset 0 0 0 40px white;
+}
+.img-4:hover {
+  box-shadow: inset 0 0 0 40px white;
+}
+
+/* 마지막 footer영역 */
+.footer-box {
+  display: flex;
+  justify-content: center;
+}
+.footer-content {
+  font-size: 30px;
+  color: white;
+  background-color: #4374d9;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 0 15px;
+}
+.footer-container p {
+  margin-top: 20px;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  /*  핸드폰 영역
+  글과 핸드폰 이미지가 중앙에 위, 아래로 오게 설정 */
+  .phone-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex에서 세로 정렬이 될 경우 세로정렬의 중앙절렬은 align-items */
+    align-items: center;
+  }
+  /* 텍스트들은 화면 중앙에 오되 각각의 크기에 맞게 정렬하기
+  그러기 위해서 width 100%을 줌 대신 align-items center가 먹히지 않아
+    text-align: center로 중앙에 오게끔 설정
+  */
+  .phone-txt {
+    width: 100%;
+    text-align: center;
+  }
+  /* 아이콘 영역
+  아이콘의 정렬이 4줄에서 2*2 정렬로 변경 */
+  .icon-box {
+    flex-wrap: wrap;
+  }
+  .icon-content {
+    width: 33%;
+    margin-top: 10px;
+  }
+  /* 이미지 영역 
+2*2 줄에서 1*1*1*1로 변경
+*/
+  .img-content {
+    width: 100%;
+  }
+}

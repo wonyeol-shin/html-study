@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 대부분의 태그에는 style 속성이 있음
+    스타일명: 값; 스타일명2: 값2
+    여러 스타일 간 구분 시 ; 로 구분
+    width  폭 (가로)
+    height 높이
+    margin-left 왼쪽 공백
+    margin-top 위쪽 마진
+
+    태그에는 inline 속성과 block 속성이 있는데
+    기본값이 liline은 태그와 block이 기본값인 속성들이 있음
+    linle 속성은 단어와 같이 다른 태그들이 한 줄에 올 수 있는 속성
+    block 속성은 한 줄을 다 차지하는 속성으로 다른 태그들은 다음 줄에 올 수 있음
+    -->
+
+    <!--
+      <img src="./lion.png" style="width: 150; margin-left: 100" /> 
+    -->
+
+    <img
+      src="./lion.png"
+      style="
+        width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+      "
+    />
+
+    <h2 style="text-align: center">WonYeol</h2>
+    <!-- 글자들 중 일부만 스타일을 달리 하고 싶다면 글자 태그중 의미없는 
+      span으로 감싸 속성을 통해 변경 가능  -->
+    <p style="text-align: center">
+      <span style="color: aqua"> backend </span>
+      Develop
+    </p>
+
+    <p style="text-align: center">30살 백앤드 개발자 it 경력 3년</p>
+
+    <div style="text-align: center">
+      <a href=""> >> 경력기술서 </a>
+    </div>
+
+    <div style="text-align: center">
+      <a href=""> >> 이력서 </a>
+    </div>
+  </body>
+</html>

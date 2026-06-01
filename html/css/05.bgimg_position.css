@@ -1,0 +1,98 @@
+/*
+        position 이해하기
+
+        웹 페이지 = 바닥(기준) 위에 박스들을 놓는 것
+
+        그냥 놓으면 → static
+        살짝 밀면 → relative
+        공중에 띄워서 기준 잡고 배치 → absolute
+        화면에 붙여버림 → fixed
+
+        static (기본 상태) : 아무 설정하지 않으면 위에서부터 아래로 쌓음
+        relative (자기 기준으로 살짝 이동) : static인 내자리에서 얼마만큼 이동
+        absolute (부모 기준으로 순간이동) : static이 아닌 가장 가까운 부모 기준에서 얼마만큼 이동
+        만약 static이 아닌 부모가 없다면 body를 기준으로 이동
+        문서의 흐름에서 빠지기 때문에 자리를  차지 하지 않고 다른 요소 위로 올라갈 수 있음(공중에 뜸)
+        fixed(뷰 포트 기준 고정) : 뷰를 기준으로 위치를 고정 시키겠다
+
+        */
+#parent {
+  width: 150px;
+  height: 450px;
+  background-color: dimgrey;
+  position: relative;
+  /* 가장 왼쪽을 기준으로 100px 떨어뜨린다
+  [가장왼쪽] <<<<< [요소]
+  즉 오른쪽이로 이동하게 됨
+  */
+  left: 100px;
+}
+
+.child {
+  width: 150px;
+  height: 150px;
+  color: white;
+  text-align: center;
+  line-height: 150px;
+  /* 가장 가까운 static이 아닌 부모인 parent클래스 div를 기준 위치로 삼겠다 */
+  position: absolute;
+  /* 부모 기준으로  */
+  right: 50px;
+}
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+  top: 75px;
+}
+.blue {
+  background-color: dodgerblue;
+  top: 150px;
+}
+/*  ------------------------------------------------------------------ */
+
+#parent2 {
+  width: 150px;
+  height: 200px;
+  background-color: black;
+  position: relative;
+}
+
+.child2 {
+  width: 150px;
+  height: 150px;
+  color: white;
+  text-align: center;
+  line-height: 150px;
+  position: absolute;
+  bottom: 200px;
+}
+.ch1 {
+  background-color: red;
+}
+.ch2 {
+  background-color: orange;
+  right: 0;
+}
+.ch3 {
+  background-color: dodgerblue;
+  bottom: 0;
+}
+.ch4 {
+  background-color: rgb(30, 255, 180);
+  right: 0;
+  bottom: 0;
+}
+
+#top {
+  width: 50px;
+  height: 50px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}

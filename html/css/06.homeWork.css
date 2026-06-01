@@ -1,0 +1,69 @@
+div {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+html {
+  line-height: 1.15;
+}
+
+.container {
+  width: 500px;
+}
+
+.container p {
+  margin-bottom: 2px;
+}
+
+.eMail {
+  margin-left: 20px;
+  width: 60%;
+  padding: 7px;
+}
+
+.firstName {
+  float: left;
+  margin-left: 13px;
+  padding: 7px;
+}
+
+.lastName {
+  float: left;
+  margin-left: 10px;
+  padding: 7px;
+}
+
+.message {
+  margin-top: 5px;
+}
+
+.message-box {
+  resize: none;
+  width: 60%;
+  height: 100px;
+}
+
+.subscribeButton {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.subscribe {
+  display: inline;
+}
+
+.submit {
+  float: left;
+  margin-top: 5px;
+  margin-left: 130px;
+}
+
+.submit-button {
+  background-color: #f2cb61;
+  width: 90px;
+  padding: 7px;
+  border: none;
+  color: white;
+}

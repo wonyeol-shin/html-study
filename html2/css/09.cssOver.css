@@ -1,0 +1,11 @@
+.test2 {
+  /*  test1이 아래에 있기 때문에 우선순위에서 밀림 */
+  color: blue;
+
+  /* !important */
+  color: darkgoldenrod !important;
+}
+
+.test1 {
+  color: red;
+}

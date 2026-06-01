@@ -1,0 +1,96 @@
+div,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+html {
+  line-height: 1.15;
+}
+/* p태그 대신 lable를 사용하기 위해
+p 태그의 기본 제공 스타일과 비슷하게 설정
+*/
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* 양식서 바깥쪽 스타일링 */
+.form-background {
+  background-color: black;
+  /* 최상위에서 padding을 줌으로 양식서 크기를 조절한다. */
+  padding: 30px;
+}
+
+/* 양식서 안쪽 스타일링 */
+.form-white {
+  background-color: white;
+  /* 양식서 안의 텍스트, input들을 안으로 넣어서 가운대 오게 조절
+  이 녀석이 모든 값들의 왼쪽, 오른쪽을 띄워서 넣게 조절 함
+  */
+  padding: 30px;
+  /* 양식서의 크기가 너무 커지지 않게 조절 */
+  width: 80%;
+  max-width: 600px;
+  /* 흰색 배경이 중앙으로 오게 배치*/
+  margin: auto;
+}
+
+/* 양식서에 있는 모든 input태그를 위한 스타일링 */
+.form-input {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  /* 이메일 input의 길이를 늘리고자 width 100%(컨텐츠 크기)를 줌
+  100% 를 다 주었다고 해서 부모의 길이만큼 길어지는 건 아님(컨텐츠 크기니깐!)
+  다만, margin, padding 과 같은 값의 크기도 고려를 해야 되기 때문에
+  오로지 컨텐츠 크기를 기준으러만 커지게 border-box 속성을 줌 -  최상단에
+  */
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+  float: left;
+  /* 이름 입력하는 클래스에게 padding을 주어 
+  first name과 last name끼리 서로 띄워져 보이게 설정
+  */
+  padding: 10px;
+}
+
+.w-100 {
+  /* 여기서의 100%는 크게 의미는 없음
+    div는 기본이 block고 
+    lable과 input은 스타일로 block 속성이 되었기 때문
+  */
+  width: 100%;
+  padding: 10px;
+}
+
+/* text*/
+.form-long {
+  /* textarea 크기 조절 삭제*/
+  resize: none;
+}
+
+.b-100 {
+  width: 100%;
+  /* 구독 버튼과 제출 버튼이 안쪽으로 들어오게 설정 */
+  padding: 10px;
+}
+
+.yellow-button {
+  background-color: #f2cb61;
+
+  padding: 10px;
+  border: none;
+  color: white;
+
+  display: block;
+  margin-left: auto;
+}

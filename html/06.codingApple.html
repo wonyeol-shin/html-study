@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact US</title>
+    <link rel="stylesheet" href="./css/06.codingApple.css" />
+  </head>
+  <body>
+    <!-- 양식서의 폼 바깥을 위한 태그 -->
+    <div class="form-background">
+      <!-- 양식서 전체를 위한 태그-->
+      <div class="form-white">
+        <form action="">
+          <!-- 안의  요소를 정리하기 위한 태그 w-50 클래스와 비슷한 역할 -->
+          <div class="w-100">
+            <h3>Contact US</h3>
+            <label>Your Email</label>
+            <input
+              class="form-input"
+              type="email"
+              placeholder="test@test.com"
+            />
+          </div>
+          <!-- first name을 입력하기 위한 태그 -->
+          <div class="w-50">
+            <label>First Name</label>
+            <input class="form-input" type="text" />
+          </div>
+          <div class="w-50">
+            <label for="">Last Name</label>
+            <input class="form-input" type="text" />
+          </div>
+          <!-- float 속성으로  위 w-50 태그들이나 
+           밑에 있는 태그들이 영향을 받아 배치가 이상해 질 수 있어 clear both -->
+          <div style="clear: both"></div>
+
+          <div class="w-100">
+            <label for="">Message</label>
+            <textarea class="form-input form-long" name="" id=""></textarea>
+          </div>
+
+          <div class="b-100">
+            <input type="checkbox" name="" id="" />
+            <span>Subscribe</span>
+            <input value="SEND" type="submit" class="yellow-button"></input>
+            
+            <!-- <button value="SEND" class="yellow-button"></button> -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

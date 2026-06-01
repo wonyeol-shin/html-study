@@ -1,0 +1,36 @@
+.test {
+  /* viewPortWidth vm : 브라우저 폭에 비례하여 커짐 */
+  width: 50vw;
+  /* viewPortHeight vg : 브라우저 높이에 비례하여 커짐 */
+  height: 50vh;
+
+  /* rem : html 기본 폰트사이즈(16px)에 배수 
+  px값을 일일히 주게 되면 기억하기가 힘드니 rem이 기준점이 되어 비율을 쉽게 늘릴 수 있음
+  html에 font-size를 변경하면 기본 폰트사이즈(16px)을 변경할 수 있음
+  */
+
+  /* em :  현재 폰트 사이즈의 N배  */
+
+  background-color: gray;
+}
+
+.h1-test {
+  font-size: 5rem;
+}
+
+/* media query라고 하며 보통 최하단에 작성한다 
+큰 값 -> 작은값 순서대로 적용 가능
+( ) 안에 있는 게 화면 사이즈가 일치할 경우 적용 하겠다는 break-point이다.
+자유롭게 해도 상관 없는데 보통 1200 -> 992 -> 768 -> 576 px을 많이 사용한다.
+*/
+@media screen and (max-width: 1200px) {
+  .h1-test {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .h1-test {
+    font-size: 1.5rem;
+  }
+}

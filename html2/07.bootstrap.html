@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- 
+    부트스트랩 쓰는 이유는 개발시간이 매우 단축된다.
+    부트스트랩 검색 후 get started에서 link와 script 링크복사
+    원하는 항목(buttom, navbar 등)을 검색하여 스타일을 복사 후 붙여넣기 한다
+    또 가져온 후 자신만의 스타일로 쉽게 꾸밀 수 있게 유틸리티(약어)를 제공한다.
+    mb-5 : margin-bottom 같은 거다.
+    -->
+    <h1>Hello, world!</h1>
+    <p>Hello, world!</p>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 부트스트랩 실습  -->
+    <br />
+    <div style="display: flex">
+      <!-- card영역  -->
+      <div class="card shadow-sm" style="width: 18rem">
+        <img src="./tv.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <!-- 뱃지 영역 rounded-5라는 radius찾아서 넣기 -->
+          <span class="badge text-bg-info rounded-5">Info</span>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <!-- 미디어 오브젝트 영역 -->
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <img
+                class="rounded-5"
+                style="width: 50px; height: 50px; object-fit: cover"
+                src="./apple.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h4>Kelly Rowan</h4>
+              <p>March 12, 2012</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

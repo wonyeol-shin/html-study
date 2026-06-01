@@ -1,0 +1,51 @@
+.container {
+  width: 800px;
+  font-size: 0px;
+}
+
+.header {
+  width: 100%;
+
+  height: 100px;
+  background: aquamarine;
+}
+
+/*
+[ display ]
+ block : 한 행을 전부 차지
+ inline-block : 내 크기만큼 차지
+  단,  inline-block는 div 사이에 공백(띄워쓰기, 줄바꿈)이 있으면 
+  공간으로 인식하기 때문에 줄바꿈 없이 배치 해야됨
+  
+  혹은 부모 태그에 font-size를 0px 로 설정 하여
+  띄워쓰기에 대한 값을 없는것으로 취급
+  단, 0px가 되버리면 div에 글씨를 못 싸버림
+
+  참고로 글씨같은걸 작성하게 되면 공책에 있는 ___ 같은 선 위에
+  글씨들을 입력하는것과 같아지는데 
+  이러한 특성 때문에 inline-block 속성을 가진 div 태그요소 또한
+  글씨와 같은 속성을 가지게 되어 __ 선 위에 배치를 해버리려고 하는 버그?가 발생한다.
+  이를 방지하기 위해 vertical-align: top; 속성을 사용하여 해결이 가능하다.
+
+  */
+
+.left-menu {
+  width: 30%;
+  height: 300px;
+  background: blue;
+  display: inline-block;
+}
+
+.right-menu {
+  width: 70%;
+  height: 300px;
+  background: coral;
+  display: inline-block;
+}
+
+.bottom {
+  width: 100%;
+  height: 100px;
+  background: black;
+  clear: both;
+}

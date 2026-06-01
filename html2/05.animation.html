@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/05.animation.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 애니메이션 만드는 단계
+            1. 시작 스타일 만들기
+            2. 최종 스타일 만들기 (최종 먼저 만드는 게 편함)
+            3. 언제 최종 스타일로 변하게 할지
+            4. transition 속성으로 애니메이션 주기
+            -->
+    <div class="shop-bg">
+      <div class="shop-container">
+        <div class="shop-item">
+          <!-- 1. 나는 최종 스타일이 밑에 있는 사진이 까만색이면 좋겠어 -->
+          <!-- 2-1. absolute를 위치시킬 relative 만들어야지 -->
+          <div style="position: relative">
+            <!-- 2. 공중에 띄우는 absolute(검정배경)을 줘야지 -->
+            <div class="overlay"></div>
+            <img dis src="./product1-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <div style="position: relative">
+            <!-- 2. 이미지 화면 절반을 차지하고 가격을 나타내는 박스  -->
+            <div class="halfPriceBox">$60</div>
+            <img src="./product2-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <img src="./product3-1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

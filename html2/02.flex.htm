@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/02.flex.css" />
+
+    <!--  사이트 검색에 영향이 있는 속성 -->
+    <!-- 
+        description : 구글 검색 시 파란 제목으로 뜨는 글귀
+        keyword : 검색에 도움을 줌
+        viewport : 사이트 접속 초기 뷰 상태 
+            (initial-scale : 반응형 웹으로 기기의 가로폭을 보고 렌더링 해라 )
+      -->
+    <meta name="description" content="html 잘하는 코딩애플입니다." />
+    <meta name="keywords" content="HTML,CSS,JavaScript,자바스크립트,코딩" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- og 매타태그로 사이트 링크 공유시 나오는 이미지, 제목, 내용을 의미 -->
+    <meta property="og:image" content="/이미지경로.jpg" />
+    <meta property="og:description" content="사이트설명" />
+    <meta property="og:title" content="사이트제목" />
+
+    <!-- favicon 으로 사이트 제목과 함께 나오는 이미지 -->
+    <link rel="icon" href="아이콘경로.ico" type="image/x-icon" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item flex-test1">1</div>
+      <div class="flex-item flex-test2">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <div class="logo-container">
+      <div class="logo-box logo-container-left">Logo</div>
+      <!-- flex-grow 속성으로 네비게이션바의 간격을 서로 벌리는것도 가능하다 -->
+      <div class="logo-box logo-container_surplus"></div>
+      <div class="logo-box">product</div>
+      <div class="logo-box">services</div>
+    </div>
+
+    <!-- codingApple 버전 -->
+    <nav class="nav-container">
+      <p class="nav-item">ShooShop</p>
+      <p style="flex-grow: 1"></p>
+      <p class="nav-item">Product</p>
+      <p class="nav-item">services</p>
+    </nav>
+
+    <!--
+    emmet 이라고 요소를 자동 완성 시켜주는 기능이다.
+    -->
+
+    <!-- "div.container>div" 
+     로 입력하고 tab 누르면 
+     
+    <div class="container">
+        <div></div>
+     </div>
+     
+     자동 완성 된다.
+     
+     "div.test-container>p.test-title*4"
+     로 입력하고 tab 누르면
+
+<div class="test-container">
+    <p class="test-title"></p>
+    <p class="test-title"></p>
+    <p class="test-title"></p>
+    <p class="test-title"></p>
+</div>
+
+    자동 완성 된다.
+     -->
+  </body>
+</html>

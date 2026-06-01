@@ -1,0 +1,72 @@
+body {
+  margin: 0px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  height: 1000px;
+}
+/* 블로그 전체 */
+.blog {
+  width: 80%;
+  height: 25%;
+}
+
+/* 왼쪽 전체 */
+.blog-left {
+  width: 70%;
+  height: 100%;
+
+  float: left;
+}
+
+/* 오른쪽 전체*/
+.blog-right {
+  width: 30%;
+  height: 100%;
+
+  float: left;
+}
+/* 왼쪽 상단 */
+.blog-left_top {
+  width: 100%;
+  height: 40%;
+  padding: 13px;
+}
+/*  왼쪽 하단 */
+.blog-left_bottom {
+  width: 100%;
+  height: 60%;
+}
+/* 오른쪽 이미지 */
+.blog-right_img {
+  width: 100%;
+  height: 80%;
+  margin-top: 10%;
+}
+
+.blog-left_img {
+  width: 50px;
+  float: left;
+}
+
+.blog-left_txt {
+  float: left;
+}
+
+.blog-left_txt h3,
+.blog-left_txt p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.blog-left_bottom h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 12px;
+}

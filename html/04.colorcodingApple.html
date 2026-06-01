@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/04.colorcodingApple.css" />
+  </head>
+  <body>
+    <!--위쪽 상단 바
+    div와 nav는 똑같은 태그인데 주로 상단 네이게이션바를 만들 때 사용한다.
+    section, footer 등도 동일하다.  -->
+    <nav>
+      <ul class="navBar">
+        <li><a href="#">영화</a></li>
+        <li><a href="#">맛집</a></li>
+        <li><a href="#">IT</a></li>
+        <li><a href="#">컴퓨터</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!-- 블로그 왼쪽 박스 -->
+      <div class="blog-content">
+        <div>
+          <img src="./lion.png" class="blog-profile" />
+          <div class="blog-name">
+            <!-- h와 p는 기본적으로 margin 속성이 있기 때문에 간격을 좁히기 위한 margin옵션 사용 -->
+            <h4 style="margin: 8px">이름</h4>
+            <p style="margin: 8px">날짜</p>
+          </div>
+        </div>
+        <!--  float 다음에 오는 녀석이라 그 오른쪽에 이상하게 붙어 버리니 clear both 사용  
+        단 위에 있는 태그들이 float속성을 가지고 있기 때문에 해당 태그에서는 margin-top을 줘도 
+        float가 위치한 위치부터 계산이 되기 때문에 단순히 "날짜"와의 간격을 띄우기 위한 목적으로 사용된다.
+        -->
+        <div style="clear: both"></div>
+        <!-- 위에 있는 잉여 태그를 기준으로 margin을 주어 "날씨"와 간격을 준다 -->
+        <div style="margin-top: 5px">
+          <h4 style="margin-bottom: 10px">블로그 글</h4>
+          <p style="margin-top: 0px">가성비 맛집 발견</p>
+        </div>
+      </div>
+      <!-- 블로그 오른쪽 박스 -->
+      <div class="blog-img">
+        <img src="./apple.jpg" width="100%" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
