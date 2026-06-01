@@ -3,7 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
+    <style>
+      .col-12 {
+        background-color: white;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div
+      style="background-color: #f7f9fc; padding: 20px; box-sizing: border-box"
+    >
+      <div class="container">
+        <!-- 프로필 영역1 -->
+        <div class="row">
+          <!-- 모바일에서는 한 줄 다들어오게 설정, pc에서는 2칸씩 -->
+          <div class="col-12 col-md-8">
+            <!-- card 섹션 부분 -->
+            <div class="card mb-3" style="max-width: 540px; border: 0px">
+              <div class="row g-0">
+                <div class="col-4">
+                  <img
+                    src="./portfolioIMG/profile-pic.png"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Killian Sven</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural
+                    </p>
+                    <button type="button" class="btn btn-info">
+                      Contact US
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 프로필 영역2 -->
+          <!-- 모바일에서는 한 줄 다들어오게 설정, pc에서는 2칸씩 -->
+          <div class="col-12 col-md-4">
+            <!-- 위치, 나이, 경력, 학교 정보 -->
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <p>Location</p>
+                </div>
+                <div class="col-6">
+                  <p>서울 마포구</p>
+                </div>
+                <div class="col-6">
+                  <p>Age</p>
+                </div>
+                <div class="col-6">
+                  <p>90년생</p>
+                </div>
+                <div class="col-6">
+                  <p>Experience</p>
+                </div>
+                <div class="col-6">
+                  <p>신입</p>
+                </div>
+                <div class="col-6">
+                  <p>school</p>
+                </div>
+                <div class="col-6">
+                  <p>천조국대 토목학과</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 프로필 헤더 영역 -->
+        <div class="row" style="margin-top: 10px">
+          <div class="col-12">
+            <ul class="nav nav-tabs">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </ul>
+          </div>
+          <!-- 프로필 바디 영역 -->
+          <!--  경력 -->
+          <!-- 모바일 사이즈에서는 한행씩 차지, pc에서는 한행에 3열모두 -->
+          <div class="col-12 col-md-2" style="margin-top: 10px">
+            <h2>WORKS</h2>
+            <p>test1</p>
+            <p>test1</p>
+            <p>test1</p>
+          </div>
+          <!-- 정보 -->
+          <div class="col-12 col-md-8" style="margin-top: 10px">
+            <h2>WORKS</h2>
+            <p>test1</p>
+            <p>test1</p>
+            <p>test1</p>
+          </div>
+          <!--  스킬 영역 -->
+          <div class="col-12 col-md-2" style="margin-top: 10px">
+            <h2>WORKS</h2>
+            <p>test1</p>
+            <p>test1</p>
+            <p>test1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
