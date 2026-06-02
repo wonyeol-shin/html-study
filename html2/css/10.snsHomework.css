@@ -1,0 +1,14 @@
+div,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.whitebox {
+  /* background-color: white; */
+  padding: 20px;
+}
